@@ -1,0 +1,74 @@
+<FrameLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    android:id="@+id/root"
+    tools:context="app.o3interfaces.maps.MapsActivity">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="196dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:orientation="vertical"
+
+       >
+
+        <TextView
+            android:id="@+id/btn2"
+            android:layout_width="172dp"
+            android:layout_height="wrap_content"
+            android:text="Finding Nearest Branch
+ please wait ......"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:visibility="invisible"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:elevation="0dp"
+            android:text="Next"
+            android:visibility="invisible"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="152dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginTop="20dp"
+            android:elevation="0dp"
+            android:text="Change location"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Dialog"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:background="@android:color/white">
+
+        <Button
+            android:id="@+id/btnGo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="Go" />
+    </LinearLayout>
+</FrameLayout>
